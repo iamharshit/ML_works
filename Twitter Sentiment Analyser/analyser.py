@@ -30,7 +30,7 @@ def twitter_sentiment_analyser():
 
 '''		
 def facebook_sentiment_analyser():
-   	access_token = 'EAACEdEose0cBALgrzi8itRLrTUwuaEwRRckMqskMTuso5swLWA5LxT2i839toK7DwOEiK243XhJP82wVA2QIbscWzxAHJTwDMS80hr3ezwmY21Q31mhXH8H5DeLaoPgqrokaZC7FYEm0ZA15mTL6TZAzQQ2mB9nOu5D6V8xOAZDZD'
+   	access_token = ''
 
    	url = 'https://graph.facebook.com/search?access_token=' + access_token + 'q=' + query + '&type=post'
    	req = urllib2.Request(url)
