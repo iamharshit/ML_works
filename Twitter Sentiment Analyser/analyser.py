@@ -4,13 +4,13 @@ from sys import argv
 import urllib2
 import json
 
-query = 'Narendra Modi'
+query = argv[1]
 
 def twitter_sentiment_analyser():
-	consumer_key = 'WVXJlr2qElRUOpDv467v6U5Il'
-	consumer_secret = 'b52Jv3G7Dzqdtxa92QhnB55ffV1m4VBDzk9vFfxzwjxNW9bLwa'
-	access_token = '463718527-Dr4R2wSBKWgBIqYcjMETlzw21Zj28Ix4maw6gCUe'
-	access_token_secret = '6QZopWCLd63qfR4GAjcD3IGT2Df2ut4s5CtAGo8EllLMI'
+	consumer_key='<your-consumer-key>'
+        consumer_secret='<your-consumer-secret>'
+        access_token='<your-access-token>'
+        access_token_secret='<your-access-token-secret>'        
 
 	auth=tweepy.OAuthHandler(consumer_key,consumer_secret)
 	auth.set_access_token(access_token,access_token_secret)
