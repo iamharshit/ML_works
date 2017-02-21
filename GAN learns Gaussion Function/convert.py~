@@ -1,0 +1,6 @@
+import imageio
+images = []
+filenames=  ['fig0.png','fig5.png','fig10.png','fig15.png','fig20.png','fig25.png','fig30.png','fig35.png','fig40.png','fig45.png','fig50.png','fig55.png','fig60.png','fig65.png','fig70.png','fig75.png','fig80.png','fig85.png','fig90.png','fig95.png']
+for filename in filenames:
+    images.append(imageio.imread(filename))
+imageio.mimsave('movie.gif', images)
