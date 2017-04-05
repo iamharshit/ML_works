@@ -11,8 +11,8 @@ For simple feed-forward movements, the RBM nodes function as an autoencoder.
 ![Reconstrustion img](https://deeplearning4j.org/img/reconstruction_RBM.png)
 
 ### References
-* (Nice Example on application of RBM)[http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/]
-* (RBM Basics and Training)[https://deeplearning4j.org/restrictedboltzmannmachine]
+* [Nice Example on application of RBM](http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/)
+* [RBM Basics and Training](https://deeplearning4j.org/restrictedboltzmannmachine)
 
 
 
