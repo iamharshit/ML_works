@@ -5,9 +5,13 @@ It is a graphical model for binary random variables.It is a very shallow network
 For simple feed-forward movements, the RBM nodes function as an autoencoder.
 
 * Forward Propagation Phase
+
+
 ![RBM NNet img](https://deeplearning4j.org/img/multiple_inputs_RBM.png)
 
 * Reconstruction Phase
+
+
 ![Reconstrustion img](https://deeplearning4j.org/img/reconstruction_RBM.png)
 
 ### References
