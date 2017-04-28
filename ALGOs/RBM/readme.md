@@ -1,7 +1,8 @@
 ## RBM 
 
-Restricted Boltzmann Machine or RBM are primarily used for Latent Feature extraction from the given input dataset which is done by analysing weight distribution on each hidden node for each input.
-It is a graphical model for binary random variables.It is a very shallow network and contains only 2 layers the visible and the hidden layer.It acts like a bipartite graph since each node in the visible layer is connected to each node in the hidden layer. The term "restricted" comes because the nodes in the same layer are not allowed to be connected.Based on a complete bipartite graph separating hidden and observed variables, it is the binary analog to the factor analysis model.
+Restricted Boltzmann Machine or RBM are primarily used for Latent Feature extraction from the given input dataset which is done by analysing weight distribution on each hidden node for each input.In RBM our aim is to reconstruct the inputs from the hidden layer and while doing so the weights of hidden layer are made such that they if analysed them when can extract some special features of our input data.
+
+It is a graphical model for binary random variables(meaning the input and either be 0 or 1 only).It is a very shallow network and contains only 2 layers the visible and the hidden layer.It acts like a bipartite graph since each node in the visible layer is connected to each node in the hidden layer. The term "restricted" comes because the nodes in the same layer are not allowed to be connected.Based on a complete bipartite graph separating hidden and observed variables, it is the binary analog to the factor analysis model.
 For simple feed-forward movements, the RBM nodes function as an autoencoder.
 
 * Forward Propagation Phase

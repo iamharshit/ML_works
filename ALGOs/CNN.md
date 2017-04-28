@@ -41,7 +41,7 @@ Convnet processes images as Tensors(multi-dimensional array).The tensors are gen
 
 The width and height of an image are easily understood. The depth is necessary because of how colors are encoded. Red-Green-Blue (RGB) encoding, for example, produces an image three layers deep. Each layer is called a “channel”, and through convolution it produces a stack of feature maps (explained below), which exist in the fourth dimension.
 
-In layman terms...
+### In layman terms
 So convolutional networks perform a sort of search. Picture a small magnifying glass sliding left to right across a larger image, and recommencing at the left once it reaches the end of one pass (like typewriters do). That moving window is capable recognizing only one thing, say, a short vertical line.A convolutional net runs many, many searches over a single image – horizontal lines, diagonal ones, as many as there are visual elements to be sought.Each time a match is found, the location of each vertical line match is recorded, a bit like birdwatchers leave pins in a map to mark where they last saw a great blue heron.
 
 Padding padds the layers with the specified pad size so that information is not lost in subsequent layer during convolution.Stride specifies the step size by which the kernel moves.Higher the stride lesser computation would be required.
@@ -56,13 +56,18 @@ Rather than focus on one pixel at a time, a convolutional net takes in square pa
 We are going to take the dot product of the filter with this patch of the image channel. If the two matrices have high values in the same positions, the dot product’s output will be high. If they don’t, it will be low. In this way, a single value – the output of the dot product – can tell us whether the pixel pattern in the underlying image matches the pixel pattern expressed by our filter.Eg if the filter represents a horizontal line then it will output high value of dot product if the patch too contains a horizontal line.
 Now, because there can be many different features in an image which we want to extract there are many filters used.This creates a stack of layers on the convolved side, each layer output of some filters.Thats the reason convolved image have higher breadth.
 One of the problem which the input image and the convolved image is that they are of high dimensions(which costs higher computation time), hence we use an additional layer to reduce the dimensionality called "Max Pooling" or "Downsampling" layer.Also the maxpooling make the value as position unspecific,which makes better for us to identify if the feature is slightly shifted.
-![](https://deeplearning4j.org/img/maxpool.png)
+
+
+![img](https://deeplearning4j.org/img/maxpool.png)
+
+
 Although it leads to loss of information but still we need it unless we have GPUs.
-ReLU Layer:
+
+### ReLU Layer:
 We use ReLU for normalisation purposes, i.e it changes a negative value to 0.
 
-Fully Connected Layer:
-This is the final layer
+### Fully Connected Layer:
+This is the final layer before the output layer and aims to straighten the data.
 
 ## Appications
 
@@ -82,24 +87,10 @@ Overall, We use alternating convolution layer(for feature detection) and Maxpoll
 
 As more and more information is lost, the patterns processed by the convolutional net become more abstract and grow more distant from visual patterns we recognize as humans.This is also one of the reasons why people find working of convnet non-intuative.
 
-1[convnet network](https://www.researchgate.net/profile/Xiaoou_Tang/publication/263237688/figure/fig1/AS:296553458749440@1447715262034/Figure-1-The-ConvNet-structure-for-DeepID2-extraction.png)
+![convnet network](https://www.researchgate.net/profile/Xiaoou_Tang/publication/263237688/figure/fig1/AS:296553458749440@1447715262034/Figure-1-The-ConvNet-structure-for-DeepID2-extraction.png)
 
 # References 
 
 * [Became Pro in CNNs](https://cs231n.github.io/)
 * [How Convent works? Shown with math](https://www.youtube.com/watch?v=FmpDIaiMIeA)
-
-
-## MNIST training why minibatches??
-Batch gradient descent isn't used generally because its computationaly expensive.Hence we uses minibatches(of size 50) generally to train.
-Case-1) We use Neural Net's Multi-layer perceptron model for training.
-Case-2) Then we use CNN to train our model.
- 
-We get an accuracy of 
-Some of the techniques to increase our prediction is DropConnect, multi-column deep nets, augmented pattern classification and dropout.
-
-
-
-
-
 
