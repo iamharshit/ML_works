@@ -24,7 +24,3 @@ We need a way to allot weights to a word along each feature that can be done by 
 <b> The Magic: </b>
 Word2vec algorithm has never been taught a single rule of English syntax. It knows nothing about the world, and is unassociated with any rules-based symbolic logic or knowledge graph. And yet it learns more, in a flexible and automated fashion, than most knowledge graphs will learn after a years of human labor. It comes to the Google News documents as a blank slate, and by the end of training, it can compute complex analogies that mean something to humans.
 
-### References
-
-* [Nice visualisation of word2vec](http://projector.tensorflow.org/)
-

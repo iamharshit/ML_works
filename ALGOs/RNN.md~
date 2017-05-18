@@ -9,7 +9,7 @@ RNN are used to model sequential data(i.e where the current datapoint has some d
 ## Application
 These are used in applications that deal with sequential data.Those includes:
 
-* Word prediction: A word in a sentence depend upon its neighboring words to match the same context, we use a RNN to model that.Offically called as Language Modelling.
+* Word prediction: A word in a sentence depend upon its neighboring words to match the same context, we use a RNN to model that.
 * Music Composition: New word depends upon previous word too, they kinda shares the same melody.
 
 We have variants of RNNs to solve much complex problem.Those include Recursive Neural Network, Recursive Neural Tensor Network, Hopfield network, Echo State Network.

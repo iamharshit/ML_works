@@ -13,7 +13,7 @@ The extracted features can be used for classification or regression.
 The next CNN layers then combine these features to increase the complexity of the image.Like combining nose, eyes, lips, ears to form a whole human face.
 The final layers of CNNs use these generated features for the task at hand.
 
-## Convolution - The Feature Highlighter
+## Convolving
 
 Think of a convolution as a way of mixing two functions by multiplying them.The first function is the input image being analyzed, and the second(mobile) function is known as the kernel/filter, because it picks up a signal or feature in the image.
 ![Visualisation](http://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html)
