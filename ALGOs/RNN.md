@@ -16,6 +16,11 @@ We have variants of RNNs to solve much complex problem.Those include Recursive N
 
 RNNs are easier to implement then they sounds because Tensorflow provides in-built methods for RNN implementation.
 
+## Choudryness in RNN
+
+In RNN we use matrix operations to trainmultiple sequences parllely in RNN - this makes training more efficient.
+i.e if sequence 1 
+
 ## Problem
 
 The RNN need to store all the states it had trained upto at some time point which can be much computationally expensive both in terms of space and time.Also the gradient keep on reducing during backpropagation phase ultimately vanishing hence we are unable to modify the weight for great-great grandparents, officially the problem is called "Vanishing gradient problem".
