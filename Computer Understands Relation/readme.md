@@ -1,6 +1,8 @@
 # Computer Understands Relation
 Given 2 related words A,B and a new word C the model extracts the relation between A & B and predicts a word that satisfy the similar relation with C i.e `A:B::C:D`.It uses the word2vec embeddings trained on Wikipedia text corpus for training purposes.
 
+These are formally called as Word Analogies. 
+
 ![img](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/img/Mikolov-GenderVecs.png)
 
 It basically uses the following formulae:
