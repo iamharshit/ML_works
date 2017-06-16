@@ -1,10 +1,12 @@
 ## Recurrent Neural Network
 
-Although RNNs are best suited for sequential data but they could also be used for other purposes
+Although RNNs are best suited for sequential data but they could also be used for other purposes.In RNNs context is passed from one layer to another so as to take the final decision based on the last context, the current input and a data independent bias.How much to give weightage to current input and how much to last context is learned during training.
 
 ### Why RNN?
 
 RNN are used to model sequential data(i.e where the current datapoint has some dependence on the previous data point eg.if our dataset is day's temperature vs day's wether condition then a day's weather also have some dependence on the weather of day before).Tradiontal neural network has no feature/layer to account for the same but in recurrent neural network we have an additional hidden layer which incorporated that.
+
+Also RNNs can have variable size input.
 
 ## Application
 These are used in applications that deal with sequential data.Those includes:
