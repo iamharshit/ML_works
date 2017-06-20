@@ -28,3 +28,14 @@ Word2vec algorithm has never been taught a single rule of English syntax. It kno
 
 * [Nice visualisation of word2vec](http://projector.tensorflow.org/)
 
+### GloVe
+
+Construct Co-occurance matrix --> Factorize that matrix to get (word*feature) matrix
+
+### Comparison
+
+Both Word2Vec and GloVe does the same things, the main difference is how they are built.Word2Vec is built by predicting the word or contex from the given word(more specifically the word vector) whereas GloVe is built from word-word co-occrance matrix(i.e frequency of 2 words occuring together).
+
+GloVe was developed because Word2Vec fails to capture some of the information of a word in its vector representation specifically saying it fails to capture Linear Substructures present in each word.
+
+It is showed that GloVe outperformed Word2Vec in standard test of word analogies.
