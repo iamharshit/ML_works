@@ -1,6 +1,9 @@
 ## Getting Out of the House
 
 ![img](http://mnemstudio.org/ai/path/images/agent_clip_image002.gif)
+
+Can be represented as -
+
 ![img](http://mnemstudio.org/ai/path/images/map3a.gif)
 
 A simple implementation of Q-Learning where given a initial state(here 'room no. in a house') the model learns to predict the best path to the goal state(here 'outside the house').
